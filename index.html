@@ -21,7 +21,7 @@
     <meta name="apple-mobile-web-app-title" content="CAW" />
     <meta name="apple-mobile-web-app-status-bar-style" content="dark" />
     <meta name="theme-color" content="dark" />
-    
+
     <meta property="al:android:url" content="http://caw.is">
     <meta property="al:android:app_name" content="CAW - The Future of Decentralized Social Media">
     <meta property="al:android:package" content="http://caw.is">
@@ -54,15 +54,19 @@
     <meta name="msapplication-TileImage" content="./assets/images/270x270.png" />
 </head>
 
-<body class="dark:bg-gray-800 dark:text-gray-200 py-5">
-    <nav class="bg-white border-gray-200 px- bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+<body class="dark:bg-gray-900 dark:text-gray-200 py-0">
+    <nav id="navbar" class="border-gray-200 bg-gray-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
         <div class="container mx-auto flex flex-wrap items-center justify-between">
             <a href="#" class="flex" data-tooltip-target="tooltip-caw-logo">
                 <img src="./assets/images/180x180.png" alt="logo" class="w-8 h-8 mr-2">
                 <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">CAW</span>
             </a>
-            <div class="flex md:order-2">
+            <div class="flex md:order-2 gap-4">
 
+                <a href="https://teh-eyes.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex justify-center items-center text-base font-medium text-gray-800 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white p-5">
+                    <span class="w-full font-bold uppercase">Launch Testnet</span>
+                </a>
                 <!-- Dark mode switcher -->
                 <button id="theme-toggle" type="button" data-tooltip-target="tooltip-theme-mode"
                     aria-label="change-theme-mode"
@@ -78,6 +82,8 @@
                             fill-rule="evenodd" clip-rule="evenodd"></path>
                     </svg>
                 </button>
+
+
                 <!-- Dark mode switcher end -->
 
                 <button data-collapse-toggle="mobile-menu-4" type="button" aria-label="toogle-mobile-menu"
@@ -102,7 +108,7 @@
                     <li>
                         <a href="https://github.com/cawdevelopment" target="_blank" rel="noopener noreferrer nofollow"
                             class="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded dark:text-white light:text-gray-500"
-                            aria-current="page">Github</a>
+                            style="padding: 15px;" aria-current="page">Github</a>
                     </li>
                     <li>
                         <a href="https://www.coingecko.com/en/coins/a-hunters-dream" target="_blank"
@@ -119,7 +125,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.dextools.io/app/ether/pair-explorer/0x7a809081f991ecfe0ab2727c7e90d2ad7c2e411e"
+                        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x48d20b3e529fb3dd7d91293f80638df582ab2daa"
                             target="_blank" rel="noopener noreferrer nofollow" aria-label="dextools"
                             class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             Dextools
@@ -156,38 +162,43 @@
                     English</a>
             </li>
             <li>
-                <a href="#" hreflang="de" aria-label="deutch"
+                <a href="#" hreflang="de" aria-label="deutch" rel="noopener"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇩🇪
                     Deutsch</a>
             </li>
             <li>
-                <a href="#" hreflang="fr" aria-label="français"
+                <a href="#" hreflang="fr" aria-label="français" rel="noopener"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇫🇷
                     Français</a>
             </li>
             <li>
-                <a href="#" hreflang="es" aria-label="español"
+                <a href="#" hreflang="es" aria-label="español" rel="noopener"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇪🇸
                     Español</a>
             </li>
             <li>
-                <a href="#" hreflang="cn" aria-label="chinese"
+                <a href="#" hreflang="cn" aria-label="chinese" rel="noopener"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇨🇳 中文</a>
             </li>
             <li>
-                <a href="#" hreflang="tr" aria-label="turkish"
+                <a href="#" hreflang="tr" aria-label="turkish" rel="noopener"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇹🇷
                     Türkçe</a>
             </li>
             <li>
-                <a href="#" hreflang="pl" aria-label="polish"
+                <a href="#" hreflang="pl" aria-label="polish" rel="noopener"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇵🇱
                     Polski</a>
             </li>
             <li>
-                <a href="#" hreflang="it" aria-label="italian"
+                <a href="#" hreflang="it" aria-label="italian" rel="noopener"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇮🇹
                     Italiano</a>
+            </li>
+            <li>
+                <a href="#" hreflang="fa" aria-label="farsi"
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    فارسی</a>
             </li>
         </ul>
     </div>
@@ -217,15 +228,16 @@
             hunt.
         </p>
         <p class="text-center dark:text-gray-200 light:text-gray-700 mb-10">
-            <a id="caw-contract" href="https://etherscan.io/token/0xf3b9569F82B18aEf890De263B84189bd33EBe452" target="_blank">
+            <a id="caw-contract" href="https://etherscan.io/token/0xf3b9569F82B18aEf890De263B84189bd33EBe452" target="_blank"
+                rel="noopener">
                 0xf3b9569F82B18aEf890De263B84189bd33EBe452
             </a>
         </p>
-        <h2 id="caw-subtitle-manifesto" class="text-2xl text-center dark:text-gray-200 light:text-gray-700">
-                The CAW Manifesto :
+        <h2 id="caw-subtitle-manifesto" class="text-2xl text-center dark:text-gray-200 light:text-gray-700 ltr:ml-3 rtl:mr-3">
+            The CAW Manifesto :
         </h2>
         <p class="text-center dark:text-gray-200 light:text-gray-700 m-10 p-10">
-            <a id="link-original-manifesto" href="https://pastebin.com/yhcajZq0" target="_blank" rel="noopener noreferrer">
+            <a id="link-original-manifesto" href="https://pastebin.com/yhcajZq0" target="_blank" rel="noopener">
                 See pristine here
             </a>
         </p>
@@ -234,7 +246,7 @@
 
         </pre>
         <div class="flex justify-center">
-            <a id="join-army-footer-link" href="https://t.me/cawbuilders" target="_blank" rel="noopener noreferrer"
+            <a id="join-army-footer-link" href="https://t.me/cawbuilders" target="_blank" rel="noopener"
                 class="flex items-center justify-center w-40 h-12 mt-4 mb-8  dark:text-gray-200 light:text-gray-700"
                 aria-label="join-telegram">
                 We are looking for devs to join our army!

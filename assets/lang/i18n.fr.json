@@ -1,10 +1,10 @@
 {
-    "title": "",
-    "description": "",
-    "manifesto-subtitle": "",
-    "tooltip-theme-mode": "",
-    "tooltip-army": "",
-    "join-army-link": "",
-    "join-army-footer-link": "",
-    "link-original-manifesto": ""
+    "title": "CAW - L'avenir des médias sociaux décentralisés",
+    "description": "CAW est un mystérieux jeton lancé sur le réseau Ethereum en tant que jeton ERC20 pour une chasse au trésor cryptographique.",
+    "manifesto-subtitle": "Le Manifeste CAW :",
+    "tooltip-theme-mode": "Changer de mode de thème",
+    "tooltip-army": "🌙 CAW builders 🌙 sur Telegram",
+    "join-army-link": "Rejoignez notre armée",
+    "join-army-footer-link": "Nous recherchons des développeurs pour rejoindre notre armée !",
+    "link-original-manifesto": "Consultez notre Manifeste"
 }

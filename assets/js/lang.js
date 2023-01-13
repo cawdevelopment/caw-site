@@ -1,6 +1,7 @@
 
 const dropdownLang = document.getElementById('dropdown-lang');
 const lang = localStorage.getItem('lang') || 'en';
+const rtlLangs = [ 'ar', 'he', 'fa' ];
 let i18n_en = null;
 
 //* Map element id to dictionary key on i18n file
@@ -41,6 +42,15 @@ async function loadTranlation(lang, desc) {
                 bnt.innerText = (desc || elLang?.innerText || '').trim();
                 bnt.innerText = bnt.innerText.replace(/(\r\n|\n|\r)/gm, " ");
             }
+
+            document.body.setAttribute('lang', lang);
+
+            //* Set RTL if needed
+            if (rtlLangs.includes(lang)) {
+                document.body.setAttribute('dir', 'rtl');
+            }
+            else
+                document.body.removeAttribute('dir');                            
         });
 }
 
