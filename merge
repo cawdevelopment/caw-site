@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merged Site</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to x.com</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, elit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, nunc id aliquam tincidunt, elit nunc tincidunt nunc, id lacinia nunc nunc id nunc.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2022 x.com. All rights reserved.</p>
+    </footer>
+</body>
+</html>
