@@ -41,9 +41,9 @@
         content="Author : TheCawmmunity, CAW is a mysterious token launched on the Ethereum network as an ERC20 token with a cryptographic treasure
         hunt.">
     <script src="./assets/js/global.js"></script>
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
 
     <link rel="canonical" href="https://caw.is/" />
@@ -56,7 +56,7 @@
 
 <body class="dark:bg-gray-900 dark:text-gray-200 py-0">
     <nav id="navbar" class="border-gray-200 bg-gray-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
-        <div class="container mx-auto flex flex-wrap items-center justify-between">
+        <div id="topbar-menu" class="container mx-auto flex flex-wrap items-center justify-between topbarMjust">
             <a href="#" class="flex" data-tooltip-target="tooltip-caw-logo">
                 <img src="./assets/images/180x180.png" alt="logo" class="w-8 h-8 mr-2">
                 <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">CAW</span>
@@ -65,7 +65,7 @@
 
                 <a href="https://teh-eyes.vercel.app/" target="_blank" rel="noopener noreferrer"
                     class="inline-flex justify-center items-center text-base font-medium text-gray-800 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white p-5">
-                    <span class="w-full font-bold uppercase">Launch Testnet</span>
+                    <span class="w-full font-bold">Launch App</span>
                 </a>
                 <!-- Dark mode switcher -->
                 <button id="theme-toggle" type="button" data-tooltip-target="tooltip-theme-mode"
@@ -142,12 +142,15 @@
                         <br class="md:hidden" />
                         <button id="dropdownDefault" data-dropdown-toggle="dropdown" aria-label="select-language"
                             class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-2 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-0 dark:focus:ring-yellow-700 md:flex justify-between items-center w-ful"
-                            type="button">EN
-                            <svg class="hidden md:block ml-2 w-4 h-4" aria-hidden="true" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
+                            type="button">
+                            <p class="flex flex-wrap items-center justify-between">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
                             </svg>
+                            English
+                            </p>
                         </button>
                     </li>
                 </ul>
@@ -155,44 +158,48 @@
         </div>
     </nav>
     <div id="dropdown" class="hidden z-10 w-50 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-        <ul id="dropdown-lang" class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+        <ul id="dropdown-lang" class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown">
             <li>
                 <a href="#" hreflang="en" aria-label="english"
-                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇬🇧
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     English</a>
             </li>
             <li>
                 <a href="#" hreflang="de" aria-label="deutch" rel="noopener"
-                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇩🇪
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     Deutsch</a>
             </li>
             <li>
                 <a href="#" hreflang="fr" aria-label="français" rel="noopener"
-                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇫🇷
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     Français</a>
             </li>
             <li>
                 <a href="#" hreflang="es" aria-label="español" rel="noopener"
-                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇪🇸
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     Español</a>
             </li>
             <li>
+                <a href="#" hreflang="ja" aria-label="japanese" rel="noopener"
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">日本語</a>
+                </li>
+                <li>
                 <a href="#" hreflang="cn" aria-label="chinese" rel="noopener"
-                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇨🇳 中文</a>
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">中文</a>
             </li>
             <li>
                 <a href="#" hreflang="tr" aria-label="turkish" rel="noopener"
-                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇹🇷
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     Türkçe</a>
             </li>
             <li>
                 <a href="#" hreflang="pl" aria-label="polish" rel="noopener"
-                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇵🇱
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     Polski</a>
             </li>
             <li>
                 <a href="#" hreflang="it" aria-label="italian" rel="noopener"
-                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">🇮🇹
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     Italiano</a>
             </li>
             <li>
@@ -200,8 +207,14 @@
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     فارسی</a>
             </li>
+            <li>
+                <a href="#" hreflang="vi" aria-label="vietnamese"
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tiếng
+                    Việt</a>
+            </li>
         </ul>
     </div>
+
     <div id="tooltip-army" role="tooltip"
         class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
         🌙 CAW builders 🌙 on Telegram
@@ -223,21 +236,22 @@
             class="mb-4 mt-8 text-3xl text-center dark:text-gray-200 light:text-gray-700">
             CAW - The Future of Decentralized Social Media
         </h1>
-        <p id="caw-desc-manifesto" aria-label="caw-intro-what-is-caw" class="mb-4 mt-8  text-center">
+        <p id="caw-desc-manifesto" aria-label="caw-intro-what-is-caw" class="mb-4 mt-8 text-center p-2">
             CAW is a mysterious token launched on the Ethereum network as an ERC20 token with a cryptographic treasure
             hunt.
         </p>
-        <p class="text-center dark:text-gray-200 light:text-gray-700 mb-10">
+        <p class="break-normal md:break-all text-center dark:text-gray-200 light:text-gray-700 mb-10 p-2"
+            style="word-break:break-all">
             <a id="caw-contract" href="https://etherscan.io/token/0xf3b9569F82B18aEf890De263B84189bd33EBe452" target="_blank"
                 rel="noopener">
                 0xf3b9569F82B18aEf890De263B84189bd33EBe452
             </a>
         </p>
         <h2 id="caw-subtitle-manifesto" class="text-2xl text-center dark:text-gray-200 light:text-gray-700 ltr:ml-3 rtl:mr-3">
-            The CAW Manifesto :
+            The CAW Manifesto is loading...
         </h2>
         <p class="text-center dark:text-gray-200 light:text-gray-700 m-10 p-10">
-            <a id="link-original-manifesto" href="https://pastebin.com/yhcajZq0" target="_blank" rel="noopener">
+            <a id="link-original-manifesto" href="https://pastebin.com/xe4fLukP" target="_blank" rel="noopener">
                 See pristine here
             </a>
         </p>

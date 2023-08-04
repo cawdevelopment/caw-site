@@ -1,0 +1,142 @@
+
+CAW - TƯƠNG LAI CỦA MẠNG XÃ HỘI PHI TẬP TRUNG
+
+CAW là một token ERC20 bí ẩn được phát triển trên mạng lưới Ethereum thông qua một cuộc truy tìm kho báu dạng mật mã
+0xf3b9569F82B18aEf890De263B84189bd33EBe452
+
+BẢN TUYÊN NGÔN CỦA CAW ( The CAW Manifesto) 
+
+
+BẢN TUYÊN NGÔN VỀ MỘT MẠNG XÃ HỘI THANH TOÁN PHI TẬP TRUNG 
+
+Trong một thập kỷ gần đây, một ý tưởng về sự phi tập trung đang dần bị lãng quên trong chúng ta, những người đã quên mất lí do đầu tiên vì sao Bitcoin được tạo nên, quên mất những vấn đề đang tồn tại mà các blockchain và tiền mã hoá được xây dựng để giải quyết chúng.
+
+Để đạt được một hệ thống phi tập trung tuyệt đối, không có một cá nhân, thực tể hay nhóm người nào có quyền kiểm soát tuyệt đối hoặc hưởng lợi từ việc kiểm soát hệ thống đó.
+
+Trong một hệ thống phi tập trung, không có một cá nhân nào có quyền theo ý muốn của anh ta có thể làm tê liệt cả một hệ thống theo bất kì cách nào. Điều này áp dụng cho cả hai khía cạnh: CÔNG NGHỆ (vd: không một người phát triển nào có thể dừng việc trao đổi hoặc làm tê liệt hệ thống/giao thức thông qua việc lợi dụng các hợp đồng thông minh mà họ tạo ra - smartcontract) và cả TÀI CHÍNH (vd: một thực thể có quyền sở hữu số lượng vô hạn token và có quyền bán tháo nó bất cứ khi nào họ muốn) 
+
+Tuy nhiên, điều đó không đồng nghĩa rằng một hệ thống phi tập trung đúng nghĩa không tồn tại những cá voi (whales) hoặc những nền tảng cơ bản của chính hệ thống đó. Sẽ luôn có những người có tác động hoặc ảnh hưởng lớn đến toàn mạng lưới, hoặc có vai trò quan trọng thông qua những nỗ lực đóng góp chăm chỉ của họ cho toàn bộ hệ thống.
+
+CAW khởi nguyên từ con số không, không có một đội ngũ phát triển chính thức, không có thông tin cụ thể, không sở hữu các trang mạng xã hội như medium, telegram hay twitter cho việc truyền thông. Chỉ ĐƠN GIẢN là một hợp đồng được tạo trên mạng lưới phi tập trung
+
+Sự tự do được trao cho những người đã tìm tòi và khám phá ra ý nghĩa của CAW. Việc này đã tiến triển rất tốt, và chúng tôi muốn trình bày những ý tưởng chi tiết của chúng tôi cho giai đoạn hai của CAW. Nhưng trước đó, chúng tôi muốn làm rõ một vài điều sau:
+
+1. Đây chỉ là một bản hướng dẫn ý tưởng. Tất cả còn lại phụ thuộc vào cộng đồng CAW để hiện thực hoá ý tưởng đó, viết và triển khai hợp đồng của CAW trên mạng lưới
+
+2 Chúng tôi nghiêm túc khuyến khích một nhóm tiên phong được thành lập để triển khai và xem xét, đánh giá các hợp đồng thông minh được viết. Bởi vì CAW là một dự án cộng đồng, sẽ không có một người lãnh đạo nào trong toàn bộ quá trình xây dựng.Tất cả mọi người sẽ cố gắng tuyên bố quyền sở hữu của quá trình này. Sẽ luôn có những người tỏ ra hữu ích và tuyên bố có thể xây dựng tất cả một mình họ nhưng rồi lại viết những mã backdoor hoàn hảo để trục lợi cho bản thân. Vì vậy, cộng đồng CAW có vai trò xem xét đánh giá các hợp đồng được viết và chấp nhận nó trên cộng đồng mở Github. 
+
+3 Sau khi các hợp đồng được triển khai, người phát triển phải TỪ BỎ quyền sỡ hữu "mã khoá" của hợp đồng mà họ viết. Sẽ không có một hệ thống đa chữ kí ( multi-sig) hoặc proxyies có thể được cập nhật/chỉnh sửa. Việc ai triển khai hợp đồng đều không quan trọng, bởi vì tất cả  trong cộng đồng CAW đều sẽ bình đẳng, không sỡ hữu bất kì lợi thế hoặc lợi ích nào. Chỉ cần tập trung vào việc xây dựng một hợp đồng tốt và chính xác.
+
+Chúng tôi đề nghị như sau:
+
+a. Một protocol được xây dựng từ những hợp đồng on-chain dùng cho việc gửi tin nhắn công khai hoặc ngang hàng (p2p) với giới hạn tối đa 420 từ 
+
+b. Thiết kế các thông số cho giao diện người dùng, trong đó nhiều giao diện sẽ được tạo và tương tác với giao thức trên.
+
+Các chức năng tổng quan của giao thức và các hợp đồng thông minh sẽ bao gồm:
+
+i. Đốt CAW thông qua một hợp đồng để tạo (mint) một NFT. Số lượng token CAW bị đốt sẽ được chuyển đến hợp đồng 0x0. NFT đó sẽ là tên người dùng của người sử dụng
+
+ii. Tất cả các hoạt động của người dùng, bao gồm xã hội và tài chính sẽ được thông qua NFT username của họ. Bất kì ai sỡ hữu NFT này có quyền truy cập vào tài khoản đó. Việc này bao gồm, và không giới hạn, số lượng token CAW trong tài khoản của họ và quyền truy cập vào tin nhắn trực tiếp của người dùng ( direct messages - DMs)
+
+iii Quyền sỡ hữu và quản lí NFT sẽ được thực hiện on-chain. Ví dụ, việc đăng kí tên người dùng "cawdev" sẽ được lưu trữ trực tiếp on-chain cùng với những dữ liệu liên quan
+
+iv Sỡ hữu NFT đó ( lưu ý, sở hữu không phải staking) cho phép người dùng nạp hoặc rút token CAW vào ví hợp đồng đó. Việc sỡ hữu NFT đó sẽ là chìa khoá để truy cập vào ví của người dùng. Với những người dùng sỡ hữu nhiều NFTs cùng lúc, họ có thể phân biệt nó bằng một con số đặc biệt liên kết với từng NFT
+
+v Người dùng có thể chi trả token CAW cho những việc sau đây:
+	i Tạo một CAW ( tương tự như tạo một dòng Tweet)
+		a Chi phí để tạo một CAW được trả bằng token CAW, và chi phí đó sẽ được chia đều theo tỉ lệ cho những người stake token CAW
+	ii Thích (Likes) dòng CAW của một người khác
+		a Việc "thích" CAW sẽ giống như tiền tip. Số token CAW chi trả cho việc "thích" sẽ được trả về cho chủ nhân của nội dung CAW đó
+	iii ReCAWing ( tương tự như việc Retweet)
+		a Chi phí chi trả cho việc này sẽ bằng token CAW và trả về cho chủ nhân của nội dung CAW đó
+
+	vi. Với việc nhận CAW từ các hoạt động trên, chúng tôi khuyến nghị một hợp đồng không tốn phí, trong đó chỉ cần chữ kí có thể trao đổi số lượng token CAW giữa các người dùng và ứng dụng trong hợp đồng thông minh được viết
+	
+	Người dùng chỉ cần chi trả phí gas cho các hoạt động sau:
+	 a Khởi tạo NFT
+	 b Nạp và rút token CAW
+
+	vii. Việc gửi tin nhắn trực tiếp (DM's) nên miễn phí và nên được thực hiện thông qua việc bắt tay tin cậy giữa hai toàn khoản người dùng để cho phép việc nhắn tin ngang hàng an toàn hơn
+	Việc tạo một nhóm chat sẽ mang đến sự phức tạp không cần thiết vì vậy chúng tôi không khuyến khích việc đó ngay lúc này
+
+	viii Tất cả các dữ liệu sẽ được lưu trữ vĩnh viễn. Vì sự giới hạn của mạng lưới Ethereum, Arweave hoặc các mạng lưới tương tự có thể được lựa chọn sử dụng. Thanh khoản của CAW có thể được chuyển sang QOMQQL1 vào một thời điểm thích hợp, nhưng việc đó sẽ chỉ được thực hiện khi các ưu điểm về công nghệ, kỹ thuật được bộc lộ và việc di chuyển trở nên hiển nhiên
+
+
+Việc lưu trữ dữ liệu phải được tuyệt đối uỷ thác không tín nhiệm và vĩnh viễn. Tầm quan trọng của việc vừa chống kiểm duyệt vừa tự kiểm soát để tạo nên một giao thức tốt hơn không được phép xem nhẹ. CAW chỉ là một bộ công cụ thô sơ để tạo nên một xã hội mạng trực tuyến. Vì vậy sẽ có một khoảng cách khác biệt giữa chính giao thức và giao diện người dùng
+
+Ở mức độ nền tảng, hợp đồng của CAW là dành cho việc lưu trữ dữ liệu không tín nhiệm và giao tiếp, tất cả mọi nội dung đều có thể được đăng tải. Chúng tôi không ngây thơ, và chúng tôi hiểu rõ những nội dung nào có thể được đăng tải
+
+Và bởi vì lí do đó, tất cả sẽ phụ thuộc vào giao diện người dùng để giới hạn những nội dung có thể làm xáo trộn những lí do ban đầu mà CAW được tạo nên
+
+Và chính vì thế, ở mức độ giao thức, sẽ không có một người dùng hoặc tin nhắn vào có thể bị khoá, cô lập hoặc cách ly. Nhờ vào bản chất của việc từ bỏ quyền sỡ hữu của các hợp đồng thông minh, sẽ không có ai có quyền hạn chế các nội dung được đăng tải ( và có lẽ bây giờ bạn có thể thấy lí do vì sao việc từ bỏ chìa khoá của các hợp đồng thông minh không có tính năng đa chữ kí hoặc cập nhật là việc quan trọng)
+
+Bây giờ đến phần giao diện người dùng. Tất cả mọi người có quyền tự do để tạo hoặc chủ trì giao diện của riêng họ, nơi có thể hiển thị bất cứ nội dung nào mà họ muốn ( hoặc không)
+
+Chúng tôi kì vọng sẽ đạt được nhiều kết quả khác cùng với mục tiêu là một ứng dụng dành cho thiết bị di động và các tiện ích mở rộng đóng vai trò là một nền tảng để cawing/ví và nhắn tin trực tiếp với việc thực hiện kí nhanh hơn và gần như vô hình để mang lại một trải nghiệm mượt mà hơn khi nhắn tin (bởi vì việc ký metamask mọi lúc có thể gây mệt mỏi) 
+
+Chúng tôi khuyến nghị cộng đồng xây dựng một giao diện người dùng alpha, ít hay nhiều đều mang tính "trung lập"
+Giao diện alpha này có thể sàng lọc các nội dung mang tính thù ghét/bạo lực, cùng với đó là các hoạt động phi pháp nghiêm trọng. Hãy nhớ rằng, điều đầu tiên quan trọng là chúng ta cần phải chinh phục/thuyết phục được cả thế giới.
+Những người dùng khác có thể có ý tưởng tốt hơn về những gì nên được hiển thị, và họ có quyền hạn để tạo nên và làm chủ giao diện người dùng của riêng họ
+Quan điểm của chúng tôi là, CAW sẽ giống như Twitter, ngoại trừ việc CAW sẽ không bị giới hạn bởi luật lệ và không có trung tâm kiểm duyệt nội dung
+Tuy nhiên, các giao diện người dùng có thể chọn để giới hạn các nội dung theo ý muốn của họ, miễn là nó phù hợp với các hướng dẫn về luật lệ cần thiết
+
+Vậy nên, kể cả khi một người dùng chặn bạn, bạn cũng không thể bị bắt bớ, kiểm soát và vẫn được tự do sử dụng giao thức
+
+PHỤ CHÚ:
+
+a Với cách thiết kế giao thức trên, một việc hiển nhiên sẽ xảy ra là các cá nhân bắt đầu mua/bán các NFT tên người dùng. Sẽ là một cách khôn ngoan nếu các thành viên cộng đồng thiết kế một thị trường mua bán ( marketplace) không tốn phí và tin tưởng cho việc giao dịch các NFT đó, tương tự như cộng đồng Crypto Punk
+Vì vậy, chúng tôi nhận thức được rằng khi CAW phát triển ở mức độ to hơn, sẽ vẫn có những người chấp nhận việc giao dịch các NFT usernames ở các thị trường mua bán tốn phí như Opensea hoặc Looks 
+Điều này đồng nghĩa với việc người triển khai các hợp đồng dùng cho việc khởi tạo NFTs sẽ có khả năng về công nghệ để nhận các khoản phí thu được từ Opensea
+
+Chúng tôi không nghĩ rằng đây là một việc tốt, và yêu cầu cộng đồng CAW tự kiểm soát/từ bỏ để chắc chắn rằng các phí nhận được khi giao dịch NFTs username không được chi trả và gửi đến các ví riêng của một vài cá nhân cụ thể.
+Nếu việc này hữu ích, điều này sẽ ngụ ý về trách nhiệm pháp lý đối với nội dung được đăng tải nếu ví của bạn đang nhận phí giao dịch
+
+b Xét về tính kinh tế, dưới đây là những con số được để mở để tranh luận và thiết kế để chúng ta có thể hiểu được giá trị theo đô la thực tế của token CAW
+
+i 50 triệu Vốn hoá thị trường ( vốn hoá hiện tại) 
+ii 1 tỉ Vốn hoá thị trường ( vốn hoá điển hình của các meme coin đang bay)
+iii 10 tỉ vốn hoá thị trường ( vốn hoá như SHIB)
+
+Chúng ta sẽ cần chú ý đến một thực tế là những gì sẽ xảy ra khi giao thức CAW phát triển mở rộng và số lượng token CAW đã bị đốt nhất định, bởi vì chúng ta sẽ không thể thay đổi chi phí của giao thức một khi giao thức chính thức đi vào hoạt động
+
+Các tính toán chi phí cần thiết trong nền tảng CAW bao gồm:
+
+i. Số lượng CAW cần để tạo một nội dung CAW ( tất cả sẽ được phân bố lại cho staker)
+ii. Số lượng CAW cần để "thích" một nội dung CAW ( gửi đến người sở hữu nội dung CAW đó)
+iii. Số lượng CAW cần để reCAW một nội dung CAW ( được phân bố giữa người sở hữu nội dung và stakers)
+iv. SỐ lượng CAW bị đốt tuỳ thuộc vào chiều dài tên người dùng NFTs
+
+Chúng tôi đã làm một số tính toán cẩn thận để xem xét các con số, nhưng có thể chúng tôi đã bỏ sót điều gì đó. Mọi tính toán của chúng tôi được tính theo cách sao cho việc "thích", reCAW và đăng tải nội dung (CAWing) luôn luôn ở mức hợp lý với mức vốn hoá thị trường là 10 tỷ đô đồng thời đảm bảo rằng những NFT tên người dùng hiếm hơn và ít kí tự hơn vẫn sẽ rất đắt đỏ.
+
+Dưới đây là chi phí chúng tôi khuyến nghị, cùng với đó là số tiền ước tính theo đô la Mỹ lần lượt ở các mốc vốn hoá thị trường từ bé đến lớn ( 50 triệu, 1 tỷ, 10 tỷ)
+
+- Một ký tự tên người dùng (hiếm) ĐỐT 1,000,000,000,000 CAW ($89,985, $1,799,712, $17,997,120) 
+- 2 ký tự tên người dùng - ĐỐT 240,000,000,000 CAW ($21,600, $432,000, $4,320,000) 
+- 3 ký tự tên người dùng - ĐỐT 60,000,000,000 CAW ($5400, $108,000, $1,080,000) 
+- 4 ký tự tên người dùng - ĐỐT 6,000,000,000 CAW ($540, $10,800 $108,000) 
+- 5 ký tự tên người dùng - ĐỐT 200,000,000 CAW ($18, $360, $3600) 
+- 6 ký tự tên người dùng - ĐỐT 20,000,000 CAW ($1.80, $36, $360) 
+- 7 ký tự tên người dùng - ĐỐT 10,000,000 CAW (90c, $18, $180) 
+- 8 ký tự tên người dùng - ĐỐT 1,000,000 CAW (9c, $1.80, $18)  
+
+- Follow một tài khoản ( trả 80/20 cho tài khoản đó và stake pool) 30000 CAW (na,0.009,9c)
+- Đăng tải một nội dung CAW (max xxx ký tự) ( trả 100% cho stake pool) 5000 CAW (na,na,1.5c)
+- Thích một nội dung CAW (trả 80/20 cho tài khoản đó và stake pool) 2000 CAW (na,na,$0.007)
+- ReCAW ( trả 50/50 cho tài khoản đó và stake pool) 4000 CAW (na,na,1.2c)
+
+c. Lưu trữ và quản lý hình ảnh
+
+i. Giao thức sẽ không tham gia vào việc lưu trữ hình ảnh. Nó sẽ vụ thuộc vào giao diện người dùng để lọc, hiển thị và lưu trữ
+ii Chúng tối khuyến khích giao diện người dùng truy xuất URLs từ các nguồn bên ngoài được đặt trong bài đăng, hoặc sử dụng trình rút ngắn URL của riêng họ để URL không phá huỷ giới hạn ký tự trong nội dung CAW 
+
+Ví dụ, nếu như một CAW của tôi là: " "Just had some great fried fish on Point Road with @tk420 #yum #foodie #bestfrens https://savoryandsweetfood.com/wp-content/uploads/2013/10/20131020-164849.jpg" 
+
+Giao diện người dùng nên rút gọn đường link URL trên ngắn hơn ví dụ như 'https://c.aw/cawdev' trước khi người dùng đăng tải bài viết and tự động hiển thị URL dưới dạng đoạn trích
+
+Gửi lời trân trọng đến những người vẫn đang mơ về một thế giới phi tập trung đúng nghĩa
+
+Tái bút: Sẽ không có một trang mạng xã hội chính thức hoặc các dự án đối tác hoặc các phát hành thêm nữa
+CAW xuất phát là một ý tưởng được định hình, và bây giờ nó phụ thuộc vào cộng đồng CAW để hoàn thiện CAW
+Chỉ bằng cách đưa cho các bạn tầm nhìn và xem những gì xảy ra tiếp theo, chúng tôi mới có thể xây dựng một hệ thống tự do và phi tập trung hoàn hảo  
+  
